@@ -4,7 +4,7 @@ Project Website - https://kimaye.com/
 
 # Project Manager- Abhishek Maurya
 
-# Team Lead - fw20_0094 - Rishav Choudhary	
+# Team Lead - Rishav Choudhary
 
 #Team Members - 
 fw20_0094 - Rishav Choudhary	
