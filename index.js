@@ -33,6 +33,13 @@ document.querySelector(".navbar > div:nth-child(1) + img").addEventListener("cli
     window.location.href = "index.html";
 })
 
+document.querySelector("#gotoallfruits").addEventListener("click", function(){
+    window.location.href = "ProductPage.html";
+})
+
+document.querySelector("#gotoallfruits1").addEventListener("click", function(){
+    window.location.href = "ProductPage.html";
+})
 
 
 // slider function
@@ -88,8 +95,7 @@ function previmage(){
     head.textContent = info[i-1];
     head.style.color= "black";
     head1.textContent = info1[i-1];
-    // head2.textContent = info2[i-1];
-    // head2.style.color = "black";
+   
 }
 
 // bottom slider2 function
