@@ -18,12 +18,17 @@
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 ::-webkit-scrollbar-thumb {
   background: #cd171f;
   border-radius: 10px;
 }
+::-webkit-scrollbar-thumb:hover {
+  background: #437111;
+  border-radius: 11px;
+}
+
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #98cb4c;
@@ -56,9 +61,21 @@ button:hover{
 /* main cointainer styling. */
 
 .container {
-    display: block;
-    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");
-
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: transparent;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background: #ecece6;
+  top: 0;
+  height: 100%;
+  /* opacity: .25; */
 }
 
 /* first div available in mumbai text styling */
@@ -102,9 +119,10 @@ button:hover{
   z-index: 1;
 }
 
+
 .navbar > div:nth-child(1) {
-  height: 100%;
-  width: 14%;
+  height: auto;
+  width: 13%;
   justify-content: space-between;
   align-items: center;
 }
@@ -117,22 +135,27 @@ button:hover{
   display: inline-block;
   cursor: pointer;
 }
-
-.dropdown i {
-  right: -18px;
-  font-size: 18px;
-  color: #bbb;
+.dropdown:hover{
+    transition: height 0.15s, line-height 0.15s, color 0.3s;
 }
 
-.dropdown-content {
+.dropdown i {
+   right: -4px;
+    top: 0px;
+    font-size: 18px;
+    color: #bbb;
+}
+
+.dropdown-content{
   display: none;
   position: absolute;
   background-color: white;
-  top: 43px;
+  top: 45px;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 
 .dropdown-content a {
   color: black;
@@ -151,6 +174,8 @@ button:hover{
 
 .dropdown-content a:hover {
   color: #98cb4c;
+  transition: .2s ease-out;
+  margin-left: 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -169,6 +194,7 @@ i {
   cursor: pointer;
   position: relative;
 }
+
 
 #searchform {
   display: none;
@@ -217,7 +243,7 @@ input[type="submit"]{
   height: 55vh;
   position: relative;
 }
-
+/* Third Nav styling */
 #third-nav {
   background-color: #437111;
   text-align: center;
@@ -305,20 +331,24 @@ li:hover {
   display: grid;
   grid-template-columns: repeat(1,1fr);
   justify-content: center;
-
+  align-items: center;
+  margin: auto;
+  gap: 40px;
 
 }
 
 #inside-grid img {
-  width: 85%;
+  width: 75%;
+  margin: auto;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #inside-grid img:hover {
   cursor: pointer;
-  border: 0;
+  width: 80%;
+  border-radius: 0;
   transition: 1s ease-out;
-  transform: scale(1.1);
+  transform: scale(1);
   opacity: 0.6;
 
 }
