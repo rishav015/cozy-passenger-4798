@@ -1,0 +1,550 @@
+
+.container>div:nth-child(1) {
+  font-size: 12px;
+  
+}
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: "Bitterbrush";
+  src: url(font/Bitterbrush-DEMO.otf);
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cd171f;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #437111;
+  border-radius: 11px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #98cb4c;
+  border-radius: 10px;
+}
+
+::selection {
+  color: #cd171f;
+  background: #98cb4c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  font-family: "Bitterbrush";
+  font-weight: 200;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+/* main cointainer styling. */
+
+.container {
+  content: "";
+  display: block;
+  /* position: absolute; */
+  left: 0;
+  width: 100%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: transparent;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background: #ecece6;
+  top: 0;
+  height: 100%;
+  /* opacity: .25; */
+}
+
+/* first div available in mumbai text styling */
+
+.container > div:nth-child(1) {
+  line-height: 60%;
+  color: white;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  grid-area: a;
+  background-color: #437111;
+}
+
+
+
+
+#first-nav {
+  line-height: 10%;
+  color: white;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  grid-area: a;
+  padding: 5px;
+  background-color: #437111;
+}
+
+
+/* Navigation bar styling */
+
+.navbar {
+  grid-area: b;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #eeeeea;
+  z-index: 1;
+}
+
+
+.navbar > div:nth-child(1) {
+  height: auto;
+  width: 13%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  font-family: "PT Sans", serif;
+  font-size: 17px;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown:hover{
+    transition: height 0.15s, line-height 0.15s, color 0.3s;
+}
+
+.dropdown i {
+   right: -4px;
+    top: 0px;
+    font-size: 18px;
+    color: #bbb;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 45px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: #6d6d6d;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+#grow,.navbar > div:nth-child(1) + img {
+  cursor: pointer;
+  
+}
+
+.dropdown-content a:hover {
+  color: #98cb4c;
+  transition: .2s ease-out;
+  margin-left: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: -40%;
+}
+
+#accountinfo {
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+i {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+#searchform {
+  display: none;
+  position: absolute;
+  top: 70px; 
+  right: 230px;
+  background-color: #f7f7f7;
+  z-index: 1;
+  padding: 20px;
+  width: 295px;
+  box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+}
+
+input[type="text"]{
+  height: 35px;
+}
+
+input[type="submit"]{
+  height: 35px;
+  background-color: #98cb4c;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.hidebar {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 0%;
+  margin-bottom: 5%;
+}
+
+/* Styling for banner */
+
+
+.banner {
+  grid-area: c;
+  position: relative;
+}
+
+#box {
+  background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grow_by_kimaye.jpg?v=1609401696);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 55vh;
+  position: relative;
+}
+
+#third-nav {
+  background-color: #437111;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+}
+
+#entry-title {
+  float: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: 45px;
+}
+
+.breadcrumbs>a:before {
+  content: "\f015";
+  display: inline-block;
+  margin-right: 5px;
+  font-family: FontAwesome;
+}
+
+.breadcrumbs>a:after {
+  content: "/";
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.breadcrumbs {
+  margin-top: 0;
+  display: block;
+  line-height: 2;
+  float: none;
+
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+  transition: 1s ease-in-out;
+  transform: scale(1.1);
+}
+
+#third-nav ul {
+  list-style: none;
+  font-size: small;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+#third-nav li {
+  margin-left: 30px;
+}
+
+li:hover {
+  text-decoration: underline;
+  transition: 1s ease-in-out;
+  transform: scale(1.1);
+}
+
+
+
+
+/* CSS for mid-div section  */
+
+
+#mid-div-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 90%;
+  margin-top: 50px;
+}
+
+
+#grid div {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 40px;
+
+}
+
+#inside-grid img {
+  width: 75%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#inside-grid img:hover {
+  cursor: pointer;
+  width: 80%;
+  border-radius: 0;
+  transition: 1s ease-out;
+  transform: scale(1);
+  opacity: 0.6;
+
+}
+#inside-grid h3:hover{
+  color: #98cb4c;
+  cursor: pointer;
+  transition: 600ms;
+}
+
+
+#grid-2 h2{
+  display: block;
+  margin-top: 60px;
+  padding: 20px;
+}
+#inside-grid-2 img {
+  width: 20%;
+}
+
+#inside-grid-2 p {
+  font-size: small;
+  margin-left: 10px;
+}
+
+#inside-grid-2 p:hover {
+  color: #98cb4c;
+  cursor: pointer;
+}
+
+#grid-2 h2 {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-style: normal;
+  color: #0a0a0a;
+}
+
+hr {
+  width: 95%;
+}
+
+/* styling for footer*/
+
+.footer {
+  grid-area: k;
+  background-color: #7d9c5b;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.footer > div {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer > div > div:nth-child(1) {
+  height: 55%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  line-height: 21px;
+}
+
+ul > li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: #cd171f;
+}
+
+#logo {
+  display: flex;
+}
+#logo-2 img{
+  width: 50%;
+}
+
+#logo > li {
+  padding-right: 6%;
+}
+
+.footer > div > div:nth-child(3) {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#copyright {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+
+@media screen and (min-width:376px) and (max-width:768px) {
+  .container {
+    display: block;
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");
+
+  }
+  /* styling for footer*/
+
+ul {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+#copyright {
+  font-size: 12px;
+}
+
+#logo li img {
+  height: 70%;
+}
+#inside-grid {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+
+}
+}
+
+@media screen and (min-width:0px) and (max-width:375px) {
+
+  .container {
+    display: block;
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");
+    
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+
+  }
+
+  
+
+  #accountinfo {
+    width: 100px;
+  }
+
+
+
+  /* styling for footer*/
+
+.footer > div > div:nth-child(1) {
+  width: 100%;
+}
+
+ul {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+#copyright {
+  font-size: 8px;
+}
+
+#logo li img {
+  height: 45%;
+}
+
+
+
+
+/* Styling for login register */
+#accountinfo {
+  width: 100px;
+}
+
+i {
+  font-size: 15px;
+}
+
+form {
+  top: 30px; 
+  right: -60px;
+  padding: 10px;
+  width: 210px;
+}
+
+input[type="text"]{
+  height: 25px;
+  width: 60%;
+}
+
+input[type="submit"]{
+  height: 25px;
+  width: 38%;
+}
+
+}

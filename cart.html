@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon-kimaye.png" type="image/icon type">
+    <title>Kimaye</title>
+    <link rel="stylesheet"  href="cart.css">
+   
+</head>
+<body>
+   <div class="top">
+      <p class="toptext">Currently available in Mumbai | Same day delivery</p>
+  <div>
+
+   <!-- navigation bar -->
+
+   <div class="navbar">
+      <div>
+          <div class="dropdown">SHOP<i class="fal fa-angle-down"></i>
+              <div class="dropdown-content">
+                  <a href="ProductPage.html">ALL FRUITS</a>
+                  <a href="#">FRESH CUTS</a>
+                  <a href="#">FRUITS COMBOS</a>
+                  <a href="#">GIFTS BY KIMAYE</a>
+                  <a href="#">COMMUNITY BUYING</a>
+                  <a href="#">FRUITS X SUBSCRIPTION</a>
+                  <a href="#">REFUND AND REPLACEMENT</a>
+              </div>
+          </div>
+          <div class="dropdown">LEARN<i class="fal fa-angle-down"></i>
+              <div class="dropdown-content">
+                  <a href="#">OUR STORY</a>
+                  <a href="#">WHY KIMAYE</a>
+                  <a href="#">TRACEABILITY</a>
+                  <a href="#">BEYOND FRUITS</a>
+              </div>
+          </div>
+          <div>
+              <p id="grow">GROW</p>
+          </div>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt="kimaye logo" height="35px" width="135px">
+      <div id="accountinfo">
+          <i class="fal fa-search searchbar"></i>
+          <form id="searchform">
+              <i class="fal fa-times hidebar"></i>
+              <input class="typeany" type="text" placeholder="Search for products">
+              <input type="submit" value="SEARCH">
+          </form>
+          <i class="fal fa-user gotologin"></i>
+      </div>
+  </div>
+   <div class="container">
+      <div class="top3">
+         <flag id="carttext" >CART</flag>
+         <p id="home"><i class="fas fa-home"></i><a href="index.html">Home</a>/ Cart</p>
+      </div>
+      <div class="middle">
+         <table class="table">
+             <tr>
+                 <th class="producttable">PRODUCT</th>               
+                 <th class="pricetable">PRICE</th>
+                 <th class="quantitytable">QUANTITY</th>
+                 <th class="totaltable">TOTAL</th>
+             </tr>
+             <tr>
+                 <td class="productname"><img class="imageUrl" width="90px" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/grapefruit-funfacts_219x.png?v=1639461506"><a class="productName" href="ProductDetailPage.html"></a><p class="bottomtext"></p></td>
+                 <td class="priceamount4"></td>
+                 <td class="quantities"><div class="boxbutton">
+                     <button id="another" value="1" class="buttonleft">-</button>
+                     <input type="text" value="1" id="display"  class="displaybox">
+                     
+                     <button id="buttonplus" class="buttonleft">+</button>
+                 </div></td>
+                 <td id="totalmoney" class="totalmoney">0</td>
+             </tr>
+             
+         </table>
+
+         <div class="pickbox"></div>
+         <div class="datebox" >Pick a Delivery Date</div>
+         <div class="datebox2">
+            <div>
+               <input class="calender" type="date">
+            </div>
+            <div class="listdiv2">
+               <select class="calender" name="times">
+                <option value="NULL">Pick a Delivery Time</option>
+                <option value="7">7AM-10AM</option>
+                <option value="10">10AM-12PM</option>
+                <option value="12">12PM-3PM</option>
+                <option value="3">3PM-6PM</option>
+               
+              </select>
+            </div>
+         </div>
+         <div class="midbox2">
+            <div class="instructbox">
+               <flag class="instructions">SPECIAL INSTRUCTIONS</flag><flag class="carttotal">CART TOTALS</flag>
+               
+            </div>
+            <div class="textareabox">
+               <textarea class="textarea" cols="5" rows="13"></textarea>
+               <div class="totalbox">
+                   <br>
+                  <strong >Sub total</strong>
+                  <flag id="subtotal" class="money"> ₹ 78</flag>
+                  <div class="hr"><hr></div>
+                  <p class="totalof"><strong>TOTAL</strong><flag id="totalamount" class="totalamount">99</flag>     </p>
+                  
+               </div>
+            </div>
+            <div class="continueshop">
+               <flag id="spend">Spend <strong  id="freedelivery">₹ 272</strong><flag id="moreto"> more to reach </flag><strong>FREE SHIPPING!</strong> 
+               </flag>
+               <div><button  onclick="checkout()" class="buttoncheckout">PROCEED TO CHECKOUT</button></div>
+               <div><button class="buttoncheckout2"><a href="ProductPage.html">CONTINUE SHOPPING</a></button></div>
+            </div>
+          
+           
+           
+         </div>
+      </div>
+     </div>
+
+     <!-- footer -->
+
+     <div class="footer">
+      <div>
+          <div>
+              <div>
+                  <ul>
+                      <li type="none">
+                          <strong>FAQ's</strong>
+                      </li>
+                      <li type="none">
+                          <strong>Contact Us</strong>
+                      </li>
+                      <li type="none">
+                          <strong>Shipping & Return Policy</strong>
+                      </li>
+                      <li type="none">
+                          <strong>Terms & Conditions</strong>
+                      </li>
+                      <li type="none">
+                          <strong>Privacy Policy</strong>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li type="none">Follow us on</li>
+                  </ul>
+                  <ul id="logo">
+                      <li type="none">
+                          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt="facebook logo">
+                      </li>
+                      <li type="none">
+                          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt="instagram logo">
+                      </li>
+                      <li type="none">
+                          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt="twitter logo">
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <hr color="#69824e">
+          <div>
+              <p id="copyright">Copyright©2021. All Rights Reserved</p>
+              <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="logo" height="20px">
+          </div>
+      </div>
+  </div>
+     
+</body>
+</html>
+<script src="cart.js"></script>

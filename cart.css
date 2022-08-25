@@ -1,0 +1,587 @@
+body {
+    background-image: url(texture/fed7656f533941ed8de02ae398fc4f22-0001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}
+
+.container{
+    display: grid;
+    grid-template-rows:80px 900px;
+    grid-template-columns: repeat(12,1fr);
+
+    grid-template-areas:
+    "t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 t3 t3"
+    "m m m m m m m m m m m m"
+    ;
+}
+
+/* Navigation bar styling. */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #eeeeea;
+    z-index: 1;
+  }
+  
+  .navbar > div:nth-child(1) {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown {
+    font-family: "PT Sans", serif;
+    font-size: 17px;
+    height: 70px;
+    height: 100%;
+    margin-top: 0%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown i {
+    right: -8px;
+    font-size: 18px;
+    color: #bbb;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 22px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #6d6d6d;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  }
+  
+  #grow,.navbar > div:nth-child(1) + img {
+    cursor: pointer;
+  }
+  
+  .dropdown-content a:hover {
+    color: #98cb4c;
+    padding-left: 10%;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #accountinfo {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  i {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #searchform {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    right: 230px;
+    background-color: #f7f7f7;
+    z-index: 1;
+    padding: 20px;
+    width: 275px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+  }
+  
+  input[type="text"]{
+    height: 35px;
+  }
+  
+  input[type="submit"]{
+    height: 35px;
+    background-color: #98cb4c;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .hidebar {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 0%;
+    margin-bottom: 5%;
+  }
+
+.top3{
+    grid-area: t3;
+    background-color:#437111 ;
+}
+.top{
+    height: 35px;
+    background-color:#437111 ;
+    margin-top: 0%;
+    border: 1px solid transparent;
+}
+.middle{
+    grid-area: m;
+}
+
+.container>div{
+    border:1px ;
+    border-left: 0px;
+    border-right: 0px;
+}
+.container>div:nth-child(1){
+    border-left: 1px;
+}
+.container>div:nth-child(11){
+    border-right: 1px;
+}
+
+.toptext{
+    color:white;
+    text-align: center;
+    font: inherit;
+    padding-bottom: 10px;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 1%;
+    height: 3px;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+}
+.kamayiimage{
+    padding-left: 560px;
+    padding-bottom: 20px;
+    width: 110px;
+    height: 5px;
+    height: auto;
+}
+#carttitle{
+    color: white;
+    text-align: center;
+    font-size:37px;
+    padding-top: 2px;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+   
+    
+}
+.homebox{
+    border:1px ;
+    height:33px;
+    width:135px;
+    margin: auto;
+}
+#home{
+   padding-left: -50px;
+    color: white ;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0%;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+#home a {
+    text-decoration: none;
+    color: white;
+}
+#home i {
+    line-height: 0%;
+}
+#home:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.heading{
+    border:1px solid black;
+    height:80px;
+    width: 100%;
+    margin-top: 50px;
+}
+.product{
+    font-size: larger;
+    font-weight:549;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 200px;
+}
+#carttext{
+    font-size: 37px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 615px;
+}
+.price{
+    font-size: larger;
+    font: weight 549px;;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 400px;
+    padding-bottom: 100px;
+}
+.quantity{
+    font-size: larger;
+    font-weight:549;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+.midbox2{
+    border: 1px solid transparent;
+    width:80%;
+    height:500px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f8f8;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.instructbox{
+    border:1px;
+    height:90px;
+    width:100%;
+    margin-top: 4%;
+}
+.instructions{
+    font-size: 24px;
+    font-weight: 600;
+    font-family:"PT Sans", "MS Sans Serif", Geneva, sans-serif;
+    padding-left: 120px;
+    padding-bottom: 20px;
+}
+.carttotal{
+    font-size: 24px;
+    font-family:"PT Sans", "MS Sans Serif", Geneva, sans-serif;
+    padding-left:250px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.totalbox{
+    border: 1px ;
+    width: 440px;
+    height: 115px;
+    margin-left: 97px;
+    background-color: white;
+    font-family: "PT Sans", "MS Sans Serif", Geneva, sans-serif;
+
+}
+
+strong {
+    margin-left: 3%;
+    margin-top: 0%;
+}
+.subtotal{
+    font-weight: 549;
+}
+.money{
+    padding-left: 320px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+.hr{
+    padding-top: 20px;
+}
+.totalof{
+    font-weight: 550;
+}
+.textarea{
+    padding-left: 0px;
+    width: 400px;
+    margin-left: 5%;
+}
+.textareabox{
+    border:1px ;
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+.continueshop{
+    border:1px ;
+    height: 185px;
+    width: 45%;
+    margin-left: 550px;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px;
+    grid-gap: 10px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+.continueshop>div{
+    border:1px;
+}
+.buttoncheckout{
+    background-color: 
+    #98cb4c; 
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size:17px;
+    border: transparent;
+    cursor: pointer;
+}
+.buttoncheckout2{
+    background-color: 
+    #98cb4c; 
+    height: 80%;
+    width: 100%;
+    color: white;
+    font-size:17px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.buttoncheckout2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttoncheckout:hover{
+    background-color:    #abcf74;
+  
+    
+}
+.productdetails{
+    height: 100px;
+    width: 100%;
+    border: 1px ;
+}
+.datebox{
+    border: 1px ;
+    height: 25px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 130px;
+   font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+.dropdown2{
+    font-family:"PT Sans", serif;
+    font-size: 17px;
+    height: 100%;
+   
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 30px;
+   
+}
+
+#grow{
+    cursor: pointer;
+    padding-top: -10px;
+    padding-left: 30px;
+}
+#grow:hover{
+    color:#98cb4c;
+}
+.logokimaye{
+    padding-left: 245px;
+    padding-top: 10px;
+}
+.iconskimaye{
+    padding-left: 450px;
+   
+}
+.iconuser{
+    padding-left: 15px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.iconsearch{
+    cursor: pointer;
+}
+#productprice{
+    padding-left: 645px;
+    font-size: 18x;
+    font-weight: 300;
+}
+
+.datebox2{
+    border:1px;
+    height: 140px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:30px 30px;
+    grid-gap: 10px;
+}
+.datebox2>div{
+    border:1px ;
+}
+.picktxt{
+    padding-top:100px
+}
+.calender{
+    width: 270px;
+    height: 30px;
+    background-color: 
+    #eeeeee;
+    margin-left: 50px;
+}
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    height:100%;
+    margin-right:100px;
+    
+    border:1px solid black;
+  }
+
+  
+  .show {display: block;}
+  .table tr th{
+    padding: 15px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #4c4c4c;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 2px solid #efefef;
+  }
+.producttable{
+    width:580px;
+ 
+}
+.pricetable{
+    width: 200px;
+   
+}
+.quantitytable{
+    width: 200px;
+}
+.totaltable{
+    width: 100px;
+}
+th{
+    height: 70px;
+}
+.productname{
+    padding-left: 100px;
+}
+.priceamount{
+    padding-left: 85px;
+}
+.quantities{
+    padding-left: 70px;
+}
+.totalmoney{
+    padding-left: 35px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.boxbutton{
+    border:1px ;
+    width:70px;
+    height:40px;
+    background-color: white;
+    display: flex;
+}
+.displaybox{
+     width:20px;
+}
+.totalamount{
+    padding-left: 320px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.productName{
+    color: #424242;
+    padding-left: 20px;
+   
+    padding-bottom: 80px;
+    
+}
+.bottomtext{
+    padding-left: 98px;
+    color: #b2b2b2;
+    font-size: 14px;
+    
+}
+
+/* styling for footer*/
+
+.footer {
+    grid-area: k;
+    background-color: #7d9c5b;
+  }
+  
+  .footer > div {
+    height: 80%;
+    margin: 2% 5%;
+  }
+  
+  .footer > div > div:nth-child(1) {
+    height: 65%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "PT Sans", sans-serif;
+    line-height: 21px;
+  }
+  
+  ul > li {
+    cursor: pointer;
+  }
+  
+  li:hover {
+    color: #cd171f;
+  }
+  
+  #logo {
+    display: flex;
+  }
+  
+  #logo > li {
+    padding-right: 6%;
+  }
+  
+  .footer > div > div:nth-child(3) {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #copyright {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+
