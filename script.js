@@ -15,28 +15,17 @@ function closesearch(){
 }
 
 
-// navbar search SUBMIT button function
-
-document.querySelector("form").addEventListener("submit", showproduct);
-
-function showproduct(event){
-    event.preventDefault();
-    var searchInput = document.querySelector(".typeany").value;
-    if(searchInput == "ALL FRUITS"){
-        window.location.href = "ProductPage.html";
-    }
-}
 
 //function for go to home page.
 
 document.querySelector(".navbar > div:nth-child(1) + img").addEventListener("click", function(){
-    window.location.href = "index.html";
+    window.location.href = "grow.html";
 })
 
 // function for go to log-in page
 
 document.querySelector(".gotologin").addEventListener("click", function(){
-    window.location.href = "Signin.html";
+    window.location.href = "login.html";
 })
 
 // function for go to cart page
@@ -44,13 +33,3 @@ document.querySelector(".gotologin").addEventListener("click", function(){
 document.querySelector(".gotocart").addEventListener("click", function(){
     window.location.href = "cart.html";
 })
-
-// gotoallfruits function
-
-document.querySelector("#gotoallfruits").addEventListener("click", function(){
-    window.location.href = "ProductPage.html";
-})
-
-document.querySelector("#gotoallfruits1").addEventListener("click", function(){
-    window.location.href = "ProductPage.html";
-});
