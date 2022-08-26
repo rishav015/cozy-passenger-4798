@@ -40,8 +40,26 @@ document.querySelector("#gotoallfruits").addEventListener("click", function(){
 document.querySelector("#gotoallfruits1").addEventListener("click", function(){
     window.location.href = "ProductPage.html";
 })
-
-
+document.querySelector("#fu").addEventListener("click", function(){
+    localStorage.setItem("type","fr")
+    window.location.href = "ProductPage.html";
+})
+document.querySelector("#ve").addEventListener("click", function(){
+    localStorage.setItem("type","vegg")
+    window.location.href = "ProductPage.html";
+})
+document.querySelector("#cu").addEventListener("click", function(){
+    localStorage.setItem("type","cu")
+    window.location.href = "ProductPage.html";
+})
+document.querySelector("#com").addEventListener("click", function(){
+    localStorage.setItem("type","com")
+    window.location.href = "ProductPage.html";
+})
+document.querySelector("#gf").addEventListener("click", function(){
+    localStorage.setItem("type","gf")
+    window.location.href = "ProductPage.html";
+})
 // slider function
 
 document.querySelector(".next").addEventListener("click", nextimage);
@@ -60,7 +78,7 @@ var info1 = ["KIMAYI VEGGIES NOW LIVE!"];
 var slider_content = document.querySelector("#box");
 
 var head = document.querySelector("#box>div>h1");
-var head1 = document.querySelector("#box>div>h2");
+var head1 = document.querySelector("#box>div");
 
 var boxdiv = document.querySelector("#box>div");
 
