@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a2fdf4aa7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <title>Kimaye Cart</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- First Navbar -->
+        <div id="first-nav">
+            <p>Delivering in Mumbai, Delhi and Gurugram | Same day delivery!</p>
+        </div>
+
+
+        <!-- navigation bar -->
+
+        <div class="navbar">
+            <div style="display: flex;">
+                <div class="dropdown">SHOP<i class="fal fa-angle-down"></i>
+                    <div class="dropdown-content">
+                        <a href="ProductPage.html">ALL FRUITS</a>
+                        <a href="#">FRESH CUTS</a>
+                        <a href="#">FRUITS COMBOS</a>
+                        <a href="#">GIFTS BY KIMAYE</a>
+                        <a href="#">COMMUNITY BUYING</a>
+                        <a href="#">FRUITS X SUBSCRIPTION</a>
+                        <a href="#">REFUND AND REPLACEMENT</a>
+                    </div>
+                </div>
+                <div class="dropdown">LEARN<i class="fal fa-angle-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">OUR STORY</a>
+                        <a href="#">WHY KIMAYE</a>
+                        <a href="#">TRACEABILITY</a>
+                        <a href="#">BEYOND FRUITS</a>
+                    </div>
+                </div>
+                <div>
+                    <p id="grow">GROW</p>
+                </div>
+            </div>
+            <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204"
+                alt="kimaye logo" height="35px" width="135px">
+            <div id="accountinfo">
+                <i class="fal fa-search searchbar"></i>
+                <form id="searchform">
+                    <i class="fal fa-times hidebar"></i>
+                    <input class="typeany" type="text" placeholder="Search for products">
+                    <input type="submit" value="SEARCH">
+                </form>
+                <!-- <i class="fal fa-user gotologin"></i> -->
+                <i class="fa-solid fa-user gotologin"></i>
+                <i class="fal fa-shopping-bag gotocart"></i>
+
+            </div>
+        </div>
+        <div id="third-nav">
+            <h1 id="entry-title">My Account</h1>
+            <div class="breadcrumbs">
+                <i class="fas fa-home"></i>
+                <a href="grow.html">Home</a>
+                <span> My Account</span>
+            </div>
+        </div>
+
+
+
+
+        <!-- Register/Login Section -->
+        <div id="login-container">
+            <div class="creatacc">
+                <form id="login-form">
+                    <div class="fb" style="display:flex; align-items: center; justify-content: space-between;">
+                        <p> Signin With Facebook </p>
+                        <i class="fa-brands fa-square-facebook" style="padding:10px; background-color: rgb(16, 60, 99);"></i>
+
+                    </div>
+                    <div class="fb google" style="display:flex; align-items: center; margin-top: 10px; justify-content: space-between;">
+                        <p> Signin With Google</p>
+                        <i class="fa-brands fa-google" style="padding:10px; background-color: rgb(202, 74, 52);"></i>
+                    </div>
+
+                    <div class="acc">
+                        <div>
+                            <i class="fa fa-external-link" style="font-size:34px"></i>
+                        </div>
+                        <div>Login</div>
+                    </div>
+                    <div class="inp">
+                        <label>Email address *</label><br>
+                        <input id="eml" type="email" value="" />
+                        <br><br>
+                        <label>Password *</label><br>
+                        <input id="pass" type="Password" minlength="5" value="" /><br>
+                        <p class="resetpass"> <i class="far fa-question-circle"></i>lost your password</p>
+                        <button class="sub">LOGIN</button>
+
+                        <div class="fb" style="display:flex; align-items: center; justify-content: space-between; margin-top:150px;">
+                            <p> Signin With Facebook </p>
+                            <i class="fa-brands fa-square-facebook" style="padding:10px; background-color: rgb(16, 60, 99);"></i>
+    
+                        </div>
+                        <div class="fb google" style="display:flex; align-items: center; margin-top: 10px; justify-content: space-between;">
+                            <p> Signin With Google</p>
+                            <i class="fa-brands fa-google" style="padding:10px; background-color: rgb(202, 74, 52);"></i>
+                        </div>
+                    </div>
+                    
+                </form>
+                <div class="register">
+                    <form id="register-form">
+                        <div class="userreg">
+                            <div><i class="fa fa-user-o" style="font-size:30px"></i>Register</div>
+                        </div>
+                        <div class="information">
+                            <label>First Name</label>
+                            <br>
+                            <input id="fname" type="name" value="" />
+                            <br><br>
+                            <label>Last Name</label><br>
+                            <input id="lname" type="name" value="" />
+                            <br><br>
+                            <label>Email address *</label><br>
+                            <input id="eml2" type="email" value="" />
+                            <br><br>
+                            <label>Password *</label><br>
+                            <input id="pass2" type="Password" minlength="5" value="" />
+                            <br><br>
+                            <button class="sub2">REGISTER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="mainreg">
+                <p class="reg"> Register</p>
+                <p class="sumary"> Welcome to Kimaye! Help us with a few details before you begin enjoying our<br> safe
+                    and
+                    tasty fruits.</p>
+                <button class="regbtn">REGISTER</button>
+                <button class="loginbtn">LOGIN</button>
+                
+            </div>
+            
+        </div>
+
+
+        <!-- footer -->
+
+        <div class="footer">
+            <div>
+                <div>
+                    <div>
+                        <ul>
+                            <li type="none">
+                                <strong>FAQ's</strong>
+                            </li>
+                            <li type="none">
+                                <strong>Contact Us</strong>
+                            </li>
+                            <li type="none">
+                                <strong>Shipping & Return Policy</strong>
+                            </li>
+                            <li type="none">
+                                <strong>Terms & Conditions</strong>
+                            </li>
+                            <li type="none">
+                                <strong>Privacy Policy</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li type="none">Follow us on</li>
+                        </ul>
+                        <ul id="logo">
+                            <li type="none">
+                                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756"
+                                    alt="facebook logo">
+                            </li>
+                            <li type="none">
+                                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756"
+                                    alt="instagram logo">
+                            </li>
+                            <li type="none">
+                                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756"
+                                    alt="twitter logo">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr color="#69824e">
+                <div id="logo-2">
+
+                    <p id="copyright">Copyright©2021. All Rights Reserved</p>
+                    <a href="https://www.ting.in/">
+                        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040"
+                            alt="logo" height="40%">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="login.js"></script>
