@@ -301,7 +301,7 @@
     /* transform: scale(1.1); */
   }
   
-  /* Register/Login Styling */
+  /* Login Styling */
 #login-container{
   display:grid;
   width:70%;
@@ -311,7 +311,7 @@
   margin-top:50px;
 }
 #login-form{
-  width:70%;
+  width:85%;
   margin: auto;
 }
 /* #login-form button, #login-form input , #login-form .fb{
@@ -346,7 +346,7 @@ margin-top: 5%;
 #login-form input{
   height:40px;
   border: none;
-  width:435px;
+  width:375px;
   margin:12px 20px;
 }
 
@@ -403,20 +403,19 @@ button:hover{
 }
 
 .loginbtn {
-height:38px;
-width:8%;
- border:1px solid black;
- background-color:black;
- font-size:15px;
- color:white;
- cursor: pointer;
-display: none;
-position: absolute;
-top: 413px; 
-left: 25;
-right: 20;
-margin-left: 16%;
-z-index: 1;
+  height: 38px;
+  width: 8%;
+  border: 1px solid black;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 441px;
+  left: 25;
+  right: 20;
+  margin-left: 13%;
 }
 .resetpass{
   margin-left:20px;
@@ -469,20 +468,27 @@ padding-top: 0%;
 }
 
 /*  register user */
-
-.register {
-background-color: white;
-height: 500px;
-display: none;
-position: absolute;
-top: 270px; 
-left:20;
-z-index: 1;
+#register-form{
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 
-.information {
-margin-top: 5%;
+.information input{
+  padding: 10px;
+  width: 80%;
+  text-align: left;
+  margin-top: 20px;
 }
+
+
+.sub2 {
+  margin-left: 0px;
+}
+
 
   /* styling for footer*/
   
@@ -542,12 +548,155 @@ margin-top: 5%;
   }
   
   
-  @media screen and (min-width:376px) and (max-width:768px) {
+  @media screen and (min-width:768px) and (max-width:1360px) {
     .container {
       display: block;
       background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");
   
     }
+
+    /* Navbar styling */
+    .navbar > div:nth-child(1) {
+      height: auto;
+      width: 5%;
+      margin-left: 100px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+    /* Styling for login register */
+    #login-container{
+      display:grid;
+      width:100%;
+      margin:auto;
+      grid-template-columns:1fr 1fr;
+      grid-gap:20px;
+      margin-top:50px;
+    }
+    #login-form{
+      width:60%;
+      margin: auto;
+    }
+    #login-form input{
+      height:40px;
+      border: none;
+      width:190px;
+      margin:12px 20px;
+    }
+    #login-form button{
+      margin-left: 60px;
+    }
+  #accountinfo {
+    width: 100px;
+  }
+  
+  i {
+    font-size: 15px;
+  }
+  
+  form {
+    top: 30px; 
+    right: -60px;
+    padding: 10px;
+    width: 210px;
+  }
+  
+  input[type="text"]{
+    height: 25px;
+    width: 60%;
+  }
+  
+  input[type="submit"]{
+    height: 25px;
+    width: 38%;
+  }
+    /* styling for footer*/
+  
+  ul {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  
+  #copyright {
+    font-size: 12px;
+  }
+  
+  #logo li img {
+    height: 70%;
+  }
+  #inside-grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  
+  }
+  }
+  @media screen and (min-width:375px) and (max-width:768px) {
+    .container {
+      display: block;
+      background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");
+  
+    }
+
+    /* Styling for Navbar */
+    .navbar > div:nth-child(1) {
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  #accountinfo {
+      width: 150px;
+      display: flex;
+      /* margin-right: 100px; */
+      justify-content: space-evenly;
+  }
+
+    /* Styling for login register */
+    #login-container{
+      display:grid;
+      width:100%;
+      margin:auto;
+      grid-template-columns:1fr 1fr;
+      grid-gap:20px;
+      margin-top:50px;
+    }
+    #login-form{
+      width:80%;
+      margin: auto;
+    }
+    #login-form input{
+      height:35px;
+      border: none;
+      width:230px;
+      margin:12px 20px;
+    }
+    #login-form button{
+      margin-left: 60px;
+    }
+  #accountinfo {
+    width: 100px;
+  }
+  
+  i {
+    font-size: 15px;
+  }
+  
+  form {
+    top: 30px; 
+    right: -60px;
+    padding: 10px;
+    width: 210px;
+  }
+  
+  input[type="text"]{
+    height: 25px;
+    width: 60%;
+  }
+  
+  input[type="submit"]{
+    height: 25px;
+    width: 38%;
+  }
     /* styling for footer*/
   
   ul {
@@ -582,7 +731,47 @@ margin-top: 5%;
       grid-template-columns: repeat(10,1fr);
   
     }
-  
+  /* Navbar */
+    .navbar > div:nth-child(1) {
+      height: auto;
+      margin-left: 20px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+#accountinfo {
+    width: 150px;
+    display: flex;
+    /* margin-right: 100px; */
+    justify-content: space-evenly;
+}
+
+     /* Styling for login register */
+     #login-container{
+      display:grid;
+      width:100%;
+      margin:auto;
+      grid-template-columns:1fr 1fr;
+      grid-gap:10px;
+      margin-top:30px;
+      font-size: 10px;
+    }
+    #login-form label{
+      font-size: 10px;
+    }
+    #login-form{
+      width:100%;
+      margin: auto;
+    }
+    #login-form input{
+      height:30px;
+      border: none;
+      width:100px;
+      margin:12px 20px;
+    }
+    #login-form button{
+      margin-left: 30px;
+    }
     
   
     #accountinfo {
