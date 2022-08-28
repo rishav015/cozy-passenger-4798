@@ -19,7 +19,7 @@ function closesearch(){
 //function for go to home page.
 
 document.querySelector(".navbar > div:nth-child(1) + img").addEventListener("click", function(){
-    window.location.href = "grow.html";
+    window.location.href = "index.html";
 })
 
 // function for go to log-in page
@@ -27,7 +27,10 @@ document.querySelector(".navbar > div:nth-child(1) + img").addEventListener("cli
 document.querySelector(".gotologin").addEventListener("click", function(){
     window.location.href = "login.html";
 })
-
+// function for go to grow page
+document.querySelector("#grow").addEventListener("click", function(){
+    window.location.href = "grow.html";
+})
 // function for go to cart page
 
 document.querySelector(".gotocart").addEventListener("click", function(){
@@ -36,7 +39,7 @@ document.querySelector(".gotocart").addEventListener("click", function(){
 
 
 // document.querySelector(".creatacc").innerHTML = null;
-
+document.querySelector(".register").style.display = "none";
 document.querySelector(".regbtn").addEventListener("click",gonext);
 function gonext(){
     document.getElementById("login-form").style.display = "none";
@@ -53,6 +56,7 @@ function gonext1(){
     document.querySelector(".regbtn").style.display = "block";
 
 }
+
 
 // register user function
 

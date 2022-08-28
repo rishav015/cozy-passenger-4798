@@ -76,12 +76,91 @@
                 <span> Cart</span>
             </div>
         </div>
+ <!-- Mid CART Section -->
+        
+ <div class="middle">
+    <table class="table">
+        <tr>
+            <th class="producttable">PRODUCT</th>
+            <th class="pricetable">PRICE</th>
+            <th class="quantitytable">QUANTITY</th>
+            <th class="totaltable">TOTAL</th>
+        </tr>
+        <tr>
+            <td class="productname"><img class="imageUrl" width="90px"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/cherry-imported_540x.jpg?v=1626511016"><a
+                    class="productName" href="ProductDetailPage.html"></a>
+                <p class="bottomtext"></p>
+            </td>
+            <td class="priceamount4"></td>
+            <td class="quantities">
+                <div class="boxbutton">
+                    <button id="another" value="1" class="buttonleft">-</button>
+                    <input type="text" value="1" id="display" class="displaybox">
+
+                    <button id="buttonplus" class="buttonleft">+</button>
+                </div>
+            </td>
+            <td id="totalmoney" class="totalmoney">0</td>
+        </tr>
+
+    </table>
+
+    <div class="pickbox"></div>
+    <div class="datebox">Pick a Delivery Date</div>
+    <div class="datebox2">
+        <div>
+            <input class="calender" type="date">
+        </div>
+        <div class="listdiv2">
+            <select class="calender" name="times">
+                <option value="NULL">Pick a Delivery Time</option>
+                <option value="7">7AM-10AM</option>
+                <option value="10">10AM-12PM</option>
+                <option value="12">12PM-3PM</option>
+                <option value="3">3PM-6PM</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="midbox2">
+        <div class="instructbox">
+            <flag class="instructions">SPECIAL INSTRUCTIONS</flag>
+            <flag class="carttotal">CART TOTALS</flag>
+
+        </div>
+        <div class="textareabox">
+            <textarea class="textarea" cols="5" rows="13"></textarea>
+            <div class="totalbox">
+                <br>
+                <strong>Sub total</strong>
+                <flag id="subtotal" class="money"> ₹ 78</flag>
+                <div class="hr">
+                    <hr>
+                </div>
+                <p class="totalof"><strong>TOTAL</strong>
+                    <flag id="totalamount" class="totalamount">99</flag>
+                </p>
+
+            </div>
+        </div>
+        <div class="continueshop">
+            <flag id="spend">Spend <strong id="freedelivery">₹ 272</strong>
+                <flag id="moreto"> more to reach </flag><strong>FREE SHIPPING!</strong>
+            </flag>
+            <div><button onclick="checkout()" class="buttoncheckout">PROCEED TO CHECKOUT</button></div>
+            <div><button class="buttoncheckout2"><a href="ProductPage.html">CONTINUE
+                        SHOPPING</a></button></div>
+        </div>
 
 
 
+    </div>
+</div>
 
-        <!-- Mid CART Section -->
 
+
+       
 
         <!-- footer -->
 

@@ -19,13 +19,17 @@ function closesearch(){
 //function for go to home page.
 
 document.querySelector(".navbar > div:nth-child(1) + img").addEventListener("click", function(){
-    window.location.href = "grow.html";
+    window.location.href = "index.html";
 })
 
 // function for go to log-in page
 
 document.querySelector(".gotologin").addEventListener("click", function(){
     window.location.href = "login.html";
+})
+
+document.querySelector("#grow").addEventListener("click", function(){
+    window.location.href = "grow.html";
 })
 
 // function for go to cart page

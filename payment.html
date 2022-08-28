@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Kimaye</title>
+
+    <link rel="stylesheet" href="info.css" />
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="information">
+        <a href="index.html">
+          <img
+            width="250px"
+            height="70px"
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo.png?14577"
+            alt="kimaye"
+          />
+        </a>
+
+        <p>Information > Shipping > payment</p>
+        <div id="address">
+          <div class="contact">
+            <p>Contact</p>
+            <p>vipinawd115@gmail.com</p>
+            <p><a href="info.html">change</a></p>
+          </div>
+
+          <div class="contact">
+            <p>Ship to</p>
+            <p>mumbai, 400001 Mumbai MH, India</p>
+            <p><a href="info.html">change</a></p>
+          </div>
+          <div class="contact">
+            <p>Method</p>
+            <p>Free Shipping</p>
+            <p>Free</p>
+          </div>
+        </div>
+        <div>
+          <h3>Payment</h3>
+          <p>All transactions are secure and encrypted</p>
+        </div>
+
+        <div class="payment_box">
+          <div class="payment_header">
+            <img
+              src="https://cdn.shopify.com/s/files/applications/e273f27d4c4fa65fc8e2af05e552f04e.png?height=24&1637057371"
+              alt="razorpay"
+            />
+            <i class="fab fasj-cc-visa master"></i>
+            <i class="fab fasj-cc-mastercard master"></i>
+            <i class="fab fasj-cc-amex master"></i>
+            <i class="fab fasj-cc-paypal master"></i>
+          </div>
+          <div class="blank_slate">
+            <img
+              height="150px"
+              width="150px"
+              src="https://tse4.mm.bing.net/th?id=OIP.j_VaaDll6z7S-qyF-Utm_wHaHa&pid=Api&P=0&w=300&h=300"
+              alt="credit icon"
+            />
+            <p>
+              After clicking “Complete order”, you will be redirected to
+              Razorpay (Cards, UPI, NetBanking, Wallets, Paypal) to complete
+              your purchase securely.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h3>Billing address</h3>
+          <p>Select the address that matches your card or payment method</p>
+          <div id="billing">
+            <div class="method">
+              <label for="">
+                <input type="radio" />
+                <span>same as billing address</span>
+              </label>
+            </div>
+            <div class="method">
+              <label for="">
+                <input type="radio" />
+                <span>Use different method for billing</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div id="continue_to_payment">
+          <input type="submit" value="Complete order" id="btn" />
+          <a href="info.html">Return to information</a>
+        </div>
+        <div id="rights">
+          <hr />
+          <p>All rights reserved Kimaye</p>
+        </div>
+      </div>
+
+      <div id="product">
+        <table id="table">
+          <tr>
+            <td>
+              <img class="grapeimg"
+                height="70px"
+                width="70px"
+                src=""
+                alt="prod"
+              />
+            </td>
+            <td class="grapefruit"></td>
+            <td class="total_cost1">₹<span id="priceoff"></span></td>
+          </tr>
+        </table>
+        <hr />
+        <div id="discount">
+          <input type="text" placeholder="Enter discount code" />
+          <button class="promobutton">Apply</button>
+        </div>
+        <hr />
+        <div id="subtotal">
+          <p>subtotal</p>
+          <p class="total_cost2">₹<span id="priceoff1"></span></p>
+        </div>
+        <div id="shipping">
+          <p>shipping</p>
+          <p>Free above Rs. 300</p>
+        </div>
+
+        <hr />
+        <div id="total">
+          <p>Total</p>
+          <p class="rate total_cost3">₹<span id="priceoff2"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="payment.js"></script>
