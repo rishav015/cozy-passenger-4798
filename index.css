@@ -1,3 +1,1426 @@
+<<<<<<< HEAD
+@font-face {
+    font-family: "Bitterbrush";
+    src: url(font/Bitterbrush-DEMO.otf);
+    font-style: normal;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cd171f;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #437111;
+    border-radius: 11px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #98cb4c;
+    border-radius: 10px;
+  }
+  
+  ::selection {
+    color: #cd171f;
+    background: #98cb4c;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0%;
+  }
+  
+  h1 {
+    font-family: "Bitterbrush";
+    font-weight: 200;
+  }
+  
+  /* main cointainer styling. */
+  
+  .container {
+    height: 5541px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 35px 70px 700px 200px 1350px 33px 800px 40px 250px 500px 33px 580px 40px 650px 260px;
+    grid-template-areas:
+      "a a a a a a a a a a a a"
+      "b b b b b b b b b b b b"
+      "c c c c c c c c c c c c"
+      "d d d d d d d d d d d d"
+      "e e e e e e e e e e e e"
+      "x x x x x x x x x x x x"
+      "f f f f f f f f f f f f"
+      "z z z z z z z z z z z z"
+      "g g g g g g g g g g g g"
+      "h h h h h h h h h h h h"
+      "o o o o o o o o o o o o"
+      "i i i i i i i i i i i i"
+      "q q q q q q q q q q q q"
+      "j j j j j j j j j j j j"
+      "k k k k k k k k k k k k";
+  }
+  
+  /* first div available in mumbai text styling */
+  
+  .container > div:nth-child(1) {
+    line-height: 60%;
+    color: white;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    grid-area: a;
+    background-color: #437111;
+  }
+  
+  /* Navigation bar styling */
+  
+  .navbar {
+    grid-area: b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #eeeeea;
+    z-index: 1;
+  }
+  
+  .navbar > div:nth-child(1) {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown {
+    font-family: "PT Sans", serif;
+    font-size: 17px;
+    height: 100%;
+    margin-top: 18%;
+    margin-left: -20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown i {
+    right: -8px;
+    font-size: 18px;
+    color: #bbb;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 43px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #6d6d6d;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  }
+  
+  #grow > a{
+    text-decoration: none;
+    color: black;
+  }
+  .navbar > div:nth-child(1) + img {
+    margin-left: -9%;
+    cursor: pointer;
+  }
+  
+  .dropdown-content a:hover {
+    color: #98cb4c;
+    padding-left: 10%;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #accountinfo {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  i {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #searchform {
+    display: none;
+    position: absolute;
+    top: 70px; 
+    right: 230px;
+    background-color: #f7f7f7;
+    z-index: 1;
+    padding: 20px;
+    width: 295px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+  }
+  
+  input[type="text"]{
+    height: 35px;
+  }
+  
+  input[type="submit"]{
+    height: 35px;
+    background-color: #98cb4c;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .hidebar {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 0%;
+    margin-bottom: 5%;
+  }
+  
+  /* styling for slider */
+  
+  .slider {
+    grid-area: c;
+    position: relative;
+  }
+  
+  #box {
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/outline-animation-banner-website-desktop_1512x.jpg?v=1660809381");
+    background-size: 100% 100%;
+    height: 700px;
+  }
+  
+  #box > div {
+    padding-left: 8%;
+    padding-top: 2%;
+    width: 73%;
+  }
+  
+  #box > div > h1 {
+    color: #d7d5d1;
+    font-size: 60px;
+    line-height: 0%;
+  }
+  
+  #box > div > h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -0.25em;
+    top: -0.35em;
+    width: 1em;
+    height: 0.78em;
+    background: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/front-leaf.png?v=1599479875) no-repeat right top transparent;
+    background-size: contain;
+  }
+  
+  #box > div > h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -0.65em;
+    top: -0.25em;
+    width: 1em;
+    height: 0.78em;
+    background: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/front-leaf.png?v=1599479875) no-repeat right top transparent;
+    background-size: contain;
+    transform: rotate(70deg);
+  }
+  
+  #box > div > h2 {
+    display: inline;
+    color: white;
+    font-size: 60px;
+    font-family: "Bitterbrush";
+    font-weight: 200;
+    position: relative;
+    padding: 0 0.5em 0 0.25em;
+    margin-left: -0.25em;
+    background: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/red-ribbon.png?v=1599479875) no-repeat center center transparent;
+    background-size: 100% 100%;
+    line-height: 1.2;
+  }
+  
+  #box > div > p {
+    color: #d7d5d1;
+    font-family: "PT Sans", sans-serif;
+    font-size: 21px;
+  }
+  
+  #box ~ button {
+    border: none;
+    color: black;
+    position: absolute;
+    top: 45%;
+    font-size: 40px;
+    font-weight: 100;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #shop {
+    padding: 1.5% 3%;
+    border-radius: 20px;
+    background-color: #98cb4c;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+  }
+  
+  .next {
+    margin-left: 97%;
+  }
+  
+  /* styling for recommend text */
+  
+  .recommends {
+    grid-area: d;
+    background-image: url(texture/fed7656f533941ed8de02ae398fc4f22-0001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .recommends > h1 {
+    padding-top: 3%;
+    font-size: 50px;
+    line-height: 50%;
+  }
+  
+  .recommends>h1::before {
+    content: '';
+    position: absolute;
+    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/t/4/assets/recom-leaf.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: transparent;
+    background-size: contain;
+    left: 10em;
+    top: 17em;
+    width: 1.15em;
+    height: 0.63em;
+  }
+  
+  .recommends > p {
+    font-size: 25px;
+    font-family: "PT Sans", sans-serif;
+  }
+  
+  /* styling for recommend products */
+  
+  .recProducts {
+    grid-area: e;
+    background-image: url(texture/fed7656f533941ed8de02ae398fc4f22-0001.jpg);
+    background-position: center top;
+    background-color: transparent;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    margin-bottom: -8%;
+  }
+  
+  .recProducts > div {
+    height: 70%;
+    width: 77%;
+    margin: auto;
+    margin-top: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:20px;
+  }
+  
+  .recProducts > div > div > div:nth-child(1) {
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  }
+  
+  .recProducts > div > div > div:nth-child(1) > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  .recProducts > div > div > div:nth-child(1) > img:hover {
+    transition: 0.5s all ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .recProducts > div > div > div:nth-child(2) {
+    text-align: center;
+  }
+  
+  .recProducts > div > div > div:nth-child(2) > p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .recProducts > div > div > div:nth-child(2) > h1 {
+    font-size: 40px;
+    line-height: 50%;
+  }
+  
+  p + button {
+    padding: 2.5% 7%;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: #cd171f;
+  }
+  
+  
+  /* styling for know more before texture */
+  
+  #x {
+    grid-area: x;
+    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/kimahi-top-cut.png?v=1599122573);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: transparent;
+    background-size: cover;
+    top: 0;
+    margin-top: -20%;
+    height: 2.0315em;
+    opacity: 0.75;
+    background-color: #f8f8f8;
+  }
+  
+  /* styling for know more option */
+  
+  .knowMore {
+    grid-area: f;
+    background-color: #73954d;
+    margin-top: -20%;
+    height: 650px;
+    /* margin-bottom: -60%; */
+  }
+  
+  #kmbox {
+    height: 200px;
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #kmbox > div:nth-child(1) {
+    width: 45%;
+  }
+  
+  #kmbox > div:nth-child(2) {
+    padding: 3% 7% 0% 3%;
+    width: 55%;
+  }
+  
+  #kmbox > div > img {
+    padding-left: 17%;
+    height: 650px;
+    width: 560px;
+  }
+  
+  #kmbox > div:nth-child(2) > h1 {
+    font-size: 55px;
+    color: white;
+  }
+  
+  span {
+    color: #ed2831;
+  }
+  
+  #kmbox div:nth-child(2) p {
+    font-family: "PT Sans", sans-serif;
+    line-height: 26px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  #kmbox div:nth-child(2) div {
+    background: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/white-ribbon.png?v=1599563566) no-repeat left center transparent;
+    background-size: 100% 100%;
+    padding-top: 2.5%;
+    height: 60px;
+    width: 350px;
+  }
+  
+  #kimaye{
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 5%;
+    font-weight: 700;
+    color: black;
+  }
+  
+  #all {
+    font-family: "PT Sans", 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  #kmbutton {
+    margin-top: 7%;
+    padding: 2.5% 5%;
+    background-color: white;
+    color: black;
+    border: transparent;
+    border-radius: 25px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+  
+  #kmbutton:hover {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+  }
+  
+  
+  /* styling for know more after texture */
+  
+  #z {
+    grid-area: z;
+    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/kimahi-bottom-cut.png?v=1599122574);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: transparent;
+    background-size: cover;
+    height: 2.1em;
+    width: 100%;
+    margin-top: -31.05%;
+    opacity: 0.75;
+    background-color: #f8f8f8;
+  }
+  
+  /* styling for our journey text*/
+
+.ourJourney {
+  grid-area: g;
+  text-align: center;
+  background-image: url(texture/fed7656f533941ed8de02ae398fc4f22-0001.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -25%;
+}
+
+.ourJourney h1 {
+  padding-top: 2%;
+  font-size: 55px;
+  font-weight: 300;
+}
+
+.ourJourney p {
+  font-size: 25px;
+  font-family: "PT Sans", sans-serif;
+}
+
+/* styling for our journey info*/
+
+.journeyinfo {
+  grid-area: h;
+  display: grid;
+  grid-template-columns: 10% 88%;
+  grid-column-gap: 2%;
+  grid-template-areas: "a b";
+  background-image: url(texture/fed7656f533941ed8de02ae398fc4f22-0001.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -22%;
+  padding-bottom: -20%;
+}
+
+#upslider {
+  overflow-y: scroll; 
+   scroll-behavior: smooth;
+  cursor: pointer;
+}
+
+#upslider >div{
+  display: flex;
+  height: 100%;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.textinfo {
+  height: 50%;
+  width: 30%;
+  margin-left: 6%;
+  margin-top: 15%;
+}
+
+.grown {
+  position: relative;
+  width: 60%;
+  margin-left: 37%;
+  height: 40%;
+  margin-top: -20%;
+}
+
+.we {
+  width: 80%;
+  margin-left: 40%;
+  height: 45%;
+  margin-top: -25%;
+}
+
+.we>p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #222222;
+}
+
+.grown>h4 {
+  font-family: "PT Sans", sans-serif;
+  color: #222222;
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: 500;
+}
+
+.imageinfo {
+  margin-top: 5%;
+  height: 80%;
+  width: 50%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.imageinfo img {
+  height: 80%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+#num {
+  content: '';
+  position: initial;
+  font-family: "PT Sans",sans-serif;
+  font-size: 6.58em;
+  font-weight: 900;
+  letter-spacing: .02em;
+  line-height: 1.18;
+  color: #a0bf7f;
+  opacity: .5;
+}
+
+/* styling for jazz it up before texture */
+
+#o {
+  grid-area: o;
+  background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/blog-top-cut.png?v=1599102918);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: transparent;
+  background-size: cover;
+  top: 0;
+  height: 2.05em;
+  opacity: 0.75;
+  background-color: #f8f8f8;
+}
+
+/* styling for jazz it up*/
+
+.jazzitUp {
+  grid-area: i;
+  background-color: #efd169;
+}
+
+.jazzitUp > div:nth-child(1) {
+  text-align: center;
+  height: 90px;
+}
+
+.jazzitUp > div:nth-child(1) h1 {
+  font-size: 50px;
+}
+
+.slider2 {
+  width: 85%;
+  margin: auto;
+  height: 370px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.slider2 > div:nth-child(1) {
+  width: 550px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_720x.jpg?v=1627119119");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.65) 0px -130px 36px -28px inset;
+}
+
+.slider2 div h2 {
+  margin: 45% 2% 0% 2%;
+  color: white;
+  line-height: 130%;
+  font-family: "PT Sans", "MS Sans Serif", Geneva, sans-serif;
+}
+
+.slider2 div p{
+  margin: 0% 2% 0% 2%;
+  color: white;
+  line-height: 120%;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.slider2 > div:nth-child(2) {
+  width: 550px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_720x.jpg?v=1626676701");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.65) 0px -130px 36px -28px inset;
+}
+
+.slider2 > button {
+  border: none;
+  color: black;
+  position: absolute;
+  top: 655%;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.prev1 {
+  margin-left: -85%;
+  margin-top: 15%;
+}
+.next1 {
+  margin-left: 85%;
+  margin-top: 15%;
+}
+
+/* styling for jazz it up after texture */
+
+#q {
+  grid-area: q;
+  background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/blog-bottom-cut.png?v=1599102919);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+  background-size: cover;
+  bottom: 0;
+  height: 2.1em;
+  width: 100%;
+  opacity: 0.75;
+  background-color: #f8f8f8;
+}
+
+/* styling for psst*/
+
+.psst {
+  grid-area: j;
+  background-image: url(texture/fed7656f533941ed8de02ae398fc4f22-0001.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.psst > div:nth-child(1) {
+  padding-top: 1%;
+  height: 250px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.psst > div:nth-child(2) {
+  width: 85%;
+  margin: auto;
+  display: flex;
+}
+
+.psst > div:nth-child(2) > div {
+  margin: 0.7%;
+}
+
+.psst > div:nth-child(2) > div > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.psst > div:nth-child(2) > div > img:hover {
+  opacity: 0.75;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.psst div h1 {
+  font-size: 55px;
+  margin-top: 7%;
+  line-height: 50%;
+}
+
+.psst div p {
+  font-size: 25px;
+  font-family: "PT Sans", sans-serif;
+}
+
+/* styling for footer*/
+
+.footer {
+  grid-area: k;
+  background-color: #7d9c5b;
+}
+
+.footer > div {
+  height: 80%;
+  margin: 2% 5%;
+}
+
+.footer > div > div:nth-child(1) {
+  height: 65%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  line-height: 21px;
+}
+
+ul > li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: #cd171f;
+}
+
+#logo {
+  display: flex;
+}
+
+#logo > li {
+  padding-right: 6%;
+}
+
+.footer > div > div:nth-child(3) {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#copyright {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (min-width:376px) and (max-width:768px) {
+
+  /* main cointainer styling */
+
+.container {
+  height: 3721px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 35px 60px 450px 150px 800px 33px 500px 40px 170px 375px 33px 450px 40px 400px 190px;
+  grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b"
+    "c c c c c c c c c c c c"
+    "d d d d d d d d d d d d"
+    "e e e e e e e e e e e e"
+    "x x x x x x x x x x x x"
+    "f f f f f f f f f f f f"
+    "z z z z z z z z z z z z"
+    "g g g g g g g g g g g g"
+    "h h h h h h h h h h h h"
+    "o o o o o o o o o o o o"
+    "i i i i i i i i i i i i"
+    "q q q q q q q q q q q q"
+    "j j j j j j j j j j j j"
+    "k k k k k k k k k k k k";
+}
+
+  /* Navigation bar styling */
+
+  .dropdown, #grow {
+    font-size: 12px;
+    margin-top: 30%;
+  }
+
+  #grow {
+    margin-top: -5px;
+  }
+
+  .dropdown i {
+    font-size: 13px;
+  }
+
+  /* styling for slider */
+
+  #box {
+    height: 450px;
+  }
+  
+  #box > div > h1 {
+    font-size: 40px;
+  }
+  
+  #box > div > h2 {
+    font-size: 40px;
+  }
+
+  #box > div > p {
+    font-size: 15px;
+  }
+  
+  #box ~ button {
+    font-size: 30px;
+  }
+
+  #shop {
+    font-size: 10px;
+  }
+
+  /* styling for recommend text */
+
+  .recommends > h1 {
+    font-size: 35px;
+  }
+  
+  .recommends>h1::before {
+    left: 7em;
+    top: 16.35em;
+  }
+  
+  .recommends > p {
+    font-size: 20px;
+  }
+
+  /* styling for recommend products */
+
+.recProducts > div > div > div:nth-child(1) {
+  border-radius: 20px;
+}
+
+.recProducts > div > div > div:nth-child(1) > img {
+  border-radius: 20px;
+}
+
+.recProducts > div > div > div:nth-child(2) > p {
+  font-size: 12px;
+}
+
+.recProducts > div > div > div:nth-child(2) > h1 {
+  font-size: 30px;
+}
+
+p + button {
+  font-size: 10px;
+}
+
+/* styling for know more option */
+
+#kmbox {
+  margin-top: 5%;
+}
+
+#kmbox > div > img {
+  height: 450px;
+  width: 330px;
+}
+
+#kmbox > div:nth-child(2) > h1 {
+  font-size: 30px;
+}
+
+#kmbox div:nth-child(2) p {
+  line-height: 16px;
+  font-size: 13px;
+}
+
+#kmbox div:nth-child(2) div {
+  height: 40px;
+  width: 250px;
+}
+
+#kimaye{
+  font-size: 20px;
+}
+
+#all {
+  font-size: 15px;
+}
+
+#kmbutton {
+  font-size: 10px;
+}
+
+/* styling for our journey text*/
+
+.ourJourney h1 {
+  font-size: 35px;
+}
+
+.ourJourney p {
+  font-size: 20px;
+}
+
+/* styling for our journey info*/
+
+.we>p {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.grown>h4 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.imageinfo {
+  margin-top: 9%;
+  height: 70%;
+}
+
+.imageinfo img {
+  border-radius: 20px;
+}
+
+#num {
+  font-size: 4.58em;
+  font-weight: 800;
+}
+
+/* styling for jazz it up*/
+
+.jazzitUp > div:nth-child(1) {
+  height: 80px;
+}
+
+.jazzitUp > div:nth-child(1) h1 {
+  font-size: 35px;
+}
+
+.slider2 {
+  height: 270px;
+}
+
+.slider2 > div:nth-child(1) {
+  width: 290px;
+  border-radius: 20px;
+}
+
+.slider2 div h2 {
+  margin-top: 63%;
+  line-height: 120%;
+  font-size: 15px;
+}
+
+.slider2 div p{
+  font-size: 11px;
+}
+
+.slider2 > div:nth-child(2) {
+  width: 290px;
+  border-radius: 20px;
+}
+
+.slider2 > button {
+  top: 438%;
+  font-size: 30px;
+}
+
+/* styling for psst*/
+
+.psst > div:nth-child(1) {
+  height: 170px;
+}
+
+.psst > div:nth-child(2) > div > img {
+  border-radius: 10px;
+}
+
+.psst div h1 {
+  font-size: 35px;
+}
+
+.psst div p {
+  font-size: 20px;
+}
+
+/* styling for footer*/
+
+ul {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+#copyright {
+  font-size: 12px;
+}
+
+#logo li img {
+  height: 70%;
+}
+
+}
+
+@media screen and (min-width:0px) and (max-width:375px) {
+
+  /* main cointainer styling */
+
+.container {
+  height: 2238px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px 50px 300px 80px 430px 20px 300px 20px 100px 250px 20px 300px 20px 200px 100px;
+  grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b"
+    "c c c c c c c c c c c c"
+    "d d d d d d d d d d d d"
+    "e e e e e e e e e e e e"
+    "x x x x x x x x x x x x"
+    "f f f f f f f f f f f f"
+    "z z z z z z z z z z z z"
+    "g g g g g g g g g g g g"
+    "h h h h h h h h h h h h"
+    "o o o o o o o o o o o o"
+    "i i i i i i i i i i i i"
+    "q q q q q q q q q q q q"
+    "j j j j j j j j j j j j"
+    "k k k k k k k k k k k k";
+}
+
+/* first div available in mumbai text styling */
+
+.container > div:nth-child(1) {
+  font-size: 12px;
+}
+
+/* Navigation bar styling */
+
+.dropdown-content {
+  top: 35px;
+  min-width: 100px;
+}
+
+.dropdown-content a {
+  padding: 5px 16px;
+  font-size: 10px;
+}
+
+.dropdown, #grow {
+  font-size: 10px;
+  margin-top: 30%;
+}
+
+.navbar > div:nth-child(1) {
+  width: 30%;
+}
+
+.navbar > div:nth-child(1) + img {
+  height: 45%;
+  width: 30%;
+}
+
+#grow {
+  width: -20px;
+
+}
+
+.dropdown i {
+  font-size: 11px;
+}
+
+#accountinfo {
+  width: 100px;
+}
+
+i {
+  font-size: 15px;
+}
+
+form {
+  top: 30px; 
+  right: -60px;
+  padding: 10px;
+  width: 210px;
+}
+
+input[type="text"]{
+  height: 25px;
+  width: 60%;
+}
+
+input[type="submit"]{
+  height: 25px;
+  width: 38%;
+}
+
+/* styling for slider */
+
+#box {
+  height: 300px;
+}
+
+#box > div > h1 {
+  font-size: 20px;
+}
+
+#box > div > h2 {
+  font-size: 20px;
+}
+
+#box > div > p {
+  font-size: 10px;
+}
+
+#box ~ button {
+  font-size: 15px;
+}
+
+#shop {
+  font-size: 10px;
+}
+
+/* styling for recommend text */
+
+.recommends > h1 {
+  font-size: 20px;
+}
+
+.recommends>h1::before {
+  left: 5.25em;
+  top: 19.85em;
+}
+
+.recommends > p {
+  font-size: 11px;
+}
+
+/* styling for recommend products */
+
+.recProducts > div > div > div:nth-child(1) {
+  border-radius: 10px;
+}
+
+.recProducts > div > div > div:nth-child(1) > img {
+  border-radius: 10px;
+}
+
+.recProducts > div > div > div:nth-child(2) > p {
+  font-size: 10px;
+}
+
+.recProducts > div > div > div:nth-child(2) > h1 {
+  font-size: 18px;
+  line-height: 10%;
+}
+
+p + button {
+  font-size: 8px;
+}
+
+/* styling for know more before texture */
+
+#x {
+  height: 1.25em;
+}
+
+/* styling for know more option */
+
+
+#kmbox > div > img {
+  height: 270px;
+  width: 150px;
+}
+
+#kmbox > div:nth-child(2) > h1 {
+  font-size: 15px;
+}
+
+#kmbox div:nth-child(2) p {
+  line-height: 10px;
+  font-size: 8px;
+}
+
+#kmbox div:nth-child(2) div {
+  height: 25px;
+  width: 150px;
+}
+
+#kimaye{
+  font-size: 10px;
+}
+
+#all {
+  font-size: 10px;
+}
+
+#kmbutton {
+  font-size: 8px;
+}
+
+/* styling for know more after texture */
+
+#z {
+  height: 1.25em;
+}
+
+/* styling for our journey text*/
+
+.ourJourney h1 {
+  font-size: 20px;
+}
+
+.ourJourney p {
+  font-size: 12px;
+}
+
+/* styling for our journey info*/
+
+.we>p {
+  font-size: 8px;
+  line-height: 9px;
+}
+
+.grown>h4 {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.imageinfo {
+  margin-top: 20%;
+  height: 50%;
+}
+
+.imageinfo img {
+  border-radius: 10px;
+}
+
+#num {
+  font-size: 2.58em;
+  font-weight: 800;
+}
+
+/* styling for jazz it up before texture */
+
+#o {
+  height: 1.25em;
+}
+
+/* styling for jazz it up*/
+
+.jazzitUp > div:nth-child(1) {
+  height: 60px;
+}
+
+.jazzitUp > div:nth-child(1) h1 {
+  font-size: 20px;
+}
+
+.slider2 {
+  height: 170px;
+}
+
+.slider2 > div:nth-child(1) {
+  width: 140px;
+  border-radius: 10px;
+}
+
+.slider2 div h2 {
+  margin-top: 78%;
+  line-height: 120%;
+  font-size: 8px;
+}
+
+.slider2 div p{
+  font-size: 7px;
+}
+
+.slider2 > div:nth-child(2) {
+  width: 140px;
+  border-radius: 20px;
+}
+
+.slider2 > button {
+  top: 267%;
+  font-size: 20px;
+}
+
+/* styling for jazz it up after texture */
+
+#q {
+  height: 1.25em;
+}
+
+/* styling for psst*/
+
+.psst > div:nth-child(1) {
+  height: 90px;
+}
+
+.psst > div:nth-child(2) > div > img {
+  border-radius: 5px;
+}
+
+.psst div h1 {
+  font-size: 20px;
+}
+
+.psst div p {
+  font-size: 12px;
+}
+
+/* styling for footer*/
+
+.footer > div > div:nth-child(1) {
+  width: 100%;
+}
+
+ul {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+#copyright {
+  font-size: 8px;
+}
+
+#logo li img {
+  height: 45%;
+}
+
+=======
 @font-face {
     font-family: "Bitterbrush";
     src: url(font/Bitterbrush-DEMO.otf);
@@ -1418,4 +2841,5 @@ ul {
   height: 45%;
 }
 
+>>>>>>> dd4a0141e35ab0ab2db22b3d0b7fbb29ff3de4b0
 }
