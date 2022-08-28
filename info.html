@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimaye</title>
+    <link rel="stylesheet" href="info.css" />
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="information">
+        <a href="index.html">
+          <img
+            width="250px"
+            height="70px"
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo.png?14577"
+            alt="kimaye"
+          />
+        </a>
+
+        <p>Information > Shipping > payment</p>
+        <form id="form" onsubmit="return validation()">
+          <div class="header">
+            <h3>Contact information</h3>
+            <p>Already have an account?<a href="SignIn.html">Log in</a></p>
+          </div>
+          <br />
+          <input id="email" type="text" placeholder="Email" />
+          <span id="fill_user" class="text_red"></span>
+          <br />
+          <input class="checkbox" type="checkbox" id="checkbox" />
+          <label for="check">Get order notification and delivery updates</label>
+          <h3>Shipping address</h3>
+          <div id="region">
+            <select name="country" id="region">
+              <option value="India">India</option>
+            </select>
+          </div>
+          <br />
+          <div id="fname">
+            <input id="first" type="text" placeholder="First name" />
+            <span id="fill_first" class="text_red"></span>
+            <input id="last" type="text" placeholder="last name" />
+            <span id="fill_last" class="text_red"></span>
+          </div>
+          <br />
+          <input id="addr" type="text" placeholder="Address" />
+          <span id="fill_address" class="text_red"></span>
+          <br />
+          <input
+            id="apartment"
+            type="text"
+            placeholder="Apartment,suite,etc.(optional)"
+          />
+          <br />
+          <div id="residence">
+            <input id="city" type="text" placeholder="City" />
+            <span id="fill_city" class="text_red"></span>
+            <select name="state" id="state" aria-placeholder="state">
+              <option value="state">state</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Andaman and Nicobar Islands">
+                Andaman and Nicobar Islands
+              </option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharastra">Maharastra</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Karnatka">Karnatka</option>
+              <option value="Tamilnadu">Tamilnadu</option>
+            </select>
+            <input id="pincode" type="number" placeholder="Pin Code" />
+          </div>
+          <br />
+          <input
+            id="mobile"
+            type="text"
+            placeholder="Mobile no for order and delivery updates"
+          />
+          <span id="fill_mobile" class="text_red"></span>
+
+          <br />
+          <input class="checkbox" type="checkbox" />
+          <label for="checkbox">Save this information for next time</label>
+          <br />
+          <input id="submitall" type="submit" value="continue to shopping" />
+        </form>
+        <hr />
+        <p>All rights reserved Kimaye</p>
+      </div>
+
+      <div id="product">
+        <table id="table">
+          <tr>
+            <td>
+              <img class="grapeimg"
+                height="70px"
+                width="70px"
+                src=""
+                alt="prod"
+              />
+            </td>
+            <td class="grapefruit"></td>
+            <td class="total_cost1">₹<span id="priceoff"></span></td>
+          </tr>
+        </table>
+        <hr />
+        <div id="discount">
+          <input type="text" placeholder="Enter discount code" />
+          <button class="promobutton">Apply</button>
+        </div>
+        <hr />
+        <div id="subtotal">
+          <p>subtotal</p>
+          <p class="total_cost2">₹<span id="priceoff1"></span></p>
+        </div>
+        <div id="shipping">
+          <p>shipping</p>
+          <p>Free above Rs. 300</p>
+        </div>
+
+        <hr />
+        <div id="total">
+          <p>Total</p>
+          <p class="rate total_cost3">₹<span id="priceoff2"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="info.js"></script>

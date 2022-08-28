@@ -34,12 +34,12 @@ console.log(y)
 
 document.querySelector(".navbar > div:nth-child(1) + img").addEventListener("click", function(){
   window.location.href = "index.html";
-})
+});
 
 // function for go to log-in page
 
 document.querySelector(".gotologin").addEventListener("click", function(){
-  window.location.href = "SignIn.html";
+  window.location.href = "login.html";
 })
 
 // function for go to cart page

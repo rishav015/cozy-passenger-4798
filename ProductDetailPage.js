@@ -166,4 +166,4 @@ let abc = JSON.parse(localStorage.getItem("store"))
  document.querySelector(".product_name").innerHTML=abc.name
  document.querySelector(".price_range").innerHTML=abc.price
 
-console.log(abc.image)
+console.log(abc.image);

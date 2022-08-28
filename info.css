@@ -1,0 +1,261 @@
+body {
+  margin: 0%;
+}
+#container {
+  width: 85%;
+  display: flex;
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  font-size: 14px;
+  background-color: #ececec;
+}
+
+#information {
+  margin: auto;
+  padding-left: 40px;
+  width: 45%;
+  height: 180vh;
+  box-sizing: border-box;
+  background-color: #ececec;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+#product {
+  width: 35%;
+  background-color: white;
+  padding-left: 30px;
+}
+input[type="text"],
+select {
+  width: 95%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: vertical;
+  border-radius: 6px;
+}
+input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+input[type="submit"] {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #437111;
+  background-clip: border-box;
+  box-sizing: border-box;
+  border: 1px transparent solid;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  padding: 1.4em 1.7em;
+  text-align: center;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+#subtotal {
+  display: flex;
+  line-height: 0;
+  justify-content: space-between;
+}
+#shipping,
+.header {
+  display: flex;
+
+  justify-content: space-between;
+}
+.header > p > a {
+  color: red;
+  text-decoration: none;
+  margin-left: 3px;
+}
+#total {
+  display: flex;
+  justify-content: space-between;
+}
+#total > p {
+  font-size: large;
+}
+table,
+td,
+th {
+  text-align: left;
+}
+table {
+  /* border: 1px solid red; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+#fname {
+  display: flex;
+  width: 100%;
+}
+
+#residence {
+  display: flex;
+  width: 100%;
+}
+
+#region {
+  width: 100%;
+}
+#discount {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+button {
+  /* width: auto; */
+  margin-left: 25px;
+  /* white-space: nowrap; */
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: 500;
+  padding: 1em 1.7em;
+  text-align: center;
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+  border: 1px transparent solid;
+  border-radius: 5px;
+  background-color: #cccccc;
+}
+#total .rate {
+  margin: 5px;
+  font-size: 30px;
+}
+#prod_image {
+  border: 1px solid transparent;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#address {
+  border: 1px solid grey;
+  height: 150px;
+  background-color: white;
+  border-radius: 5px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#shipping_method {
+  border: 1px solid grey;
+  height: 55px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+.delivery_charge {
+  text-align: right;
+  padding-left: 350px;
+}
+
+#continue_to_payment #btn {
+  margin-right: 20px;
+}
+#continue_to_payment,
+a {
+  color: red;
+  text-decoration: none;
+}
+#rights {
+  margin-top: 300px;
+  font-size: 0.8571428571em;
+  color: #6a6a6a;
+}
+.payment_box {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+.payment_header {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 100%;
+  height: 60px;
+}
+.blank_slate {
+  width: 100%;
+  height: 230px;
+}
+.blank_icon {
+  margin-bottom: 1.14em;
+}
+.blank_slate > p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#billing {
+  /* display: flex; */
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+#billing .method {
+  /* border: 1px solid red; */
+  /* width: 98%; */
+  height: 40px;
+  background-color: white;
+  height: 40px;
+}
+.blank_slate > .credit {
+  height: 100px;
+}
+.master {
+  padding: 20px;
+}
+.blank_slate > img {
+  margin-left: 190px;
+  line-height: 0;
+  margin-top: 10px;
+}
+.text_red {
+  color: red;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  #container {
+    height: 130vh;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  #container {
+    display: block;
+    width: 100%;
+  }
+  #information {
+    width: 100%;
+    background-color: #ececec;
+    margin-left: 0;
+    padding-left: 0;
+    height: 100vh;
+  }
+  #product {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
